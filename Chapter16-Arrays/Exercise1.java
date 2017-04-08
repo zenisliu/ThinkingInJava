@@ -1,4 +1,4 @@
-package com.hongfeng.test;
+package com.zenisliu.test;
 
 /**
  * Created by zenisliu on 17/4/8.
