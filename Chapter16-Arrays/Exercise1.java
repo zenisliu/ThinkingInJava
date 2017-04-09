@@ -21,10 +21,15 @@ public class Exercise1 {
     }
 
     public static void main(String[] args) {
+
         // OK, Aggregate Initialization
         BerrylliumSphere[] a = {new BerrylliumSphere(), new BerrylliumSphere()};
+
         // OK, but use Dynamic Aggregate Initialization is redundant
         BerrylliumSphere[] b = new BerrylliumSphere[] {new BerrylliumSphere(), new BerrylliumSphere()};
+        // Wrong!! You can not set  Dynamic Aggregate Initialization array size statically!!
+        // BerrylliumSphere[] b = new BerrylliumSphere[2] {new BerrylliumSphere(), new BerrylliumSphere()};
+
         // OK, use Dynamic Aggregate Initialization here is good
         test(new BerrylliumSphere[] {new BerrylliumSphere(), new BerrylliumSphere()});
         // Bad!! can't use this kind of Aggregate Initialization here
